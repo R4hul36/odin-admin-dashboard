@@ -1,5 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+header {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+aside {
+  grid-area: 1 / 1 / 3 / 2;
+  height: 100vh;
+}
+
+main {
+  grid-area: 2 / 2 / 3 / 3;
 }
