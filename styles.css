@@ -19,5 +19,28 @@ aside {
 }
 
 main {
+  display: grid;
   grid-area: 2 / 2 / 3 / 3;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  background-color: rgb(228, 230, 231);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  padding: 35px 10px;
+  background-color: white;
+}
+
+/* right section */
+
+.announcement-container {
+  padding: 35px 15px;
+  background-color: white;
 }
