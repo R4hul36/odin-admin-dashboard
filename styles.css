@@ -11,8 +11,9 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-columns: minmax(250px, 350px) 1fr;
+  grid-template-rows: 150px 1fr;
+  font-family: sans-serif;
 }
 
 li {
@@ -33,21 +34,18 @@ main {
 
 /* Left navigation */
 
-aside {
+.sidebar-container {
+  display: grid;
   grid-area: 1 / 1 / 3 / 2;
-  gap: 30px;
-  background-color: aliceblue;
+  gap: 50px;
   align-content: start;
-  padding: 25px 10px;
+  padding: 25px 15px;
   background-image: var(--sidebar-background-clr);
   color: var(--btn-and-logo-clr);
 }
 
-.sidebar-container {
-  display: grid;
-}
-
-.logo-section {
+.logo-section,
+.links > a {
   display: grid;
   grid-template-columns: 30px auto;
   gap: 30px;
@@ -68,17 +66,15 @@ svg {
   color: white;
 }
 
-.main-links ul {
+.main-links ul,
+.secondary-links ul {
   display: grid;
   gap: 10px;
   margin-left: 10px;
 }
 
 .links > a {
-  display: grid;
-  grid-template-columns: 30px auto;
-  align-items: center;
-  gap: 25px;
+  gap: 25px !important;
 }
 
 .links > a > span {
