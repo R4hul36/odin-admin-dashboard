@@ -5,8 +5,8 @@
 }
 
 :root {
-    --sidebar-background-clr: linear-gradient(#e14eca,#ba54f5);
-    --btn-and-logo-clr: white;
+  --sidebar-background-clr: linear-gradient(#e14eca, #ba54f5);
+  --btn-and-logo-clr: white;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 header {
   grid-area: 1 / 2 / 2 / 3;
@@ -31,6 +31,27 @@ main {
   background-color: rgb(228, 230, 231);
 }
 
+/* Left navigation */
+
+#logo {
+  width: 60px;
+}
+
+.logo-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo-section span {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.logo-section img {
+  color: white;
+}
+
+/* project cards section */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -42,11 +63,22 @@ main {
   background-color: white;
 }
 
+.cards,
+.announcement-container,
+.trending-container {
+  margin-top: 20px;
+}
+
 /* right section */
 
-.announcement-container {
+.announcement-container,
+.trending-container {
   padding: 35px 15px;
   background-color: white;
+}
+
+.trending {
+  margin-top: 35px;
 }
 
 /* side bar */
@@ -58,10 +90,9 @@ aside {
   align-content: start;
   padding: 25px;
   background-image: var(--sidebar-background-clr);
-  color: var(--btn-and-logo-clr)
+  color: var(--btn-and-logo-clr);
 }
 
-
 .sidebar-container {
-    display: grid;
+  display: grid;
 }
