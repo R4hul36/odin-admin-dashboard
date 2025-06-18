@@ -7,6 +7,9 @@
 :root {
   --sidebar-background-clr: linear-gradient(#e14eca, #ba54f5);
   --btn-and-logo-clr: white;
+  --background-clr: rgb(30, 30, 47);
+  --main-txt-clr: white;
+  --card-background-clr: rgba(39,41,61,255);
 }
 
 body {
@@ -14,6 +17,8 @@ body {
   grid-template-columns: minmax(250px, 350px) 1fr;
   grid-template-rows: 150px 1fr;
   font-family: sans-serif;
+  background-color: var(--background-clr);
+  color: var(--main-txt-clr);
 }
 
 li {
@@ -29,7 +34,25 @@ main {
   grid-template-columns: 3fr 1fr;
   gap: 20px;
   padding: 30px;
-  background-color: rgb(228, 230, 231);
+  
+}
+
+/* header section */
+
+.search {
+  display: grid;
+  grid-template-columns: 40px 500px;
+  gap: 20px;
+  margin: 30px;
+}
+
+.search > svg {
+  width: 30px;
+}
+
+.search > input {
+  outline: none;
+  border-radius: 5px;
 }
 
 /* Left navigation */
@@ -93,8 +116,8 @@ svg {
 }
 
 .card {
-  padding: 35px 10px;
-  background-color: white;
+  padding: 30px 20px;
+  background-color: var(--card-background-clr);
 }
 
 .cards,
@@ -108,7 +131,8 @@ svg {
 .announcement-container,
 .trending-container {
   padding: 35px 15px;
-  background-color: white;
+  background-color: var(--card-background-clr);
+  font-size: 14px;
 }
 
 .trending {
