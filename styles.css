@@ -33,13 +33,24 @@ main {
 
 /* Left navigation */
 
-#logo {
-  width: 60px;
+aside {
+  grid-area: 1 / 1 / 3 / 2;
+  gap: 30px;
+  background-color: aliceblue;
+  align-content: start;
+  padding: 25px 10px;
+  background-image: var(--sidebar-background-clr);
+  color: var(--btn-and-logo-clr);
+}
+
+.sidebar-container {
+  display: grid;
 }
 
 .logo-section {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 30px auto;
+  gap: 30px;
 }
 
 .logo-section span {
@@ -47,8 +58,35 @@ main {
   font-size: 2rem;
 }
 
-.logo-section img {
+svg {
+  width: 50px;
+  fill: white;
+}
+
+.sidebar-container a {
+  text-decoration: none;
   color: white;
+}
+
+.main-links ul {
+  display: grid;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.links > a {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  gap: 25px;
+}
+
+.links > a > span {
+  align-self: center;
+}
+
+.links > a > svg {
+  width: 30px;
 }
 
 /* project cards section */
@@ -79,20 +117,4 @@ main {
 
 .trending {
   margin-top: 35px;
-}
-
-/* side bar */
-
-aside {
-  grid-area: 1 / 1 / 3 / 2;
-  gap: 30px;
-  background-color: aliceblue;
-  align-content: start;
-  padding: 25px;
-  background-image: var(--sidebar-background-clr);
-  color: var(--btn-and-logo-clr);
-}
-
-.sidebar-container {
-  display: grid;
 }
