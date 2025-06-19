@@ -73,6 +73,9 @@ main {
   gap: 30px;
 }
 
+.links > a {
+  width: 30px;
+}
 .logo-section span {
   align-self: center;
   font-size: 2rem;
@@ -117,7 +120,7 @@ svg {
 .card {
   padding: 30px 30px;
   background-color: var(--card-background-clr);
-  border-left: 5px solid #ce45ae;
+  border-left: 7px solid #ce45ae;
   border-radius: 5px;
   display: grid;
   gap: 10px;
