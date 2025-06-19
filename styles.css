@@ -10,12 +10,12 @@
   --background-clr: rgb(30, 30, 47);
   --main-txt-clr: white;
   --card-background-clr: rgba(39, 41, 61, 255);
-  --announcement-font-size: 0.8rem;
+  --announcement-font-size: 1rem;
 }
 
 body {
   display: grid;
-  grid-template-columns: minmax(250px, 350px) 1fr;
+  grid-template-columns: minmax(250px, 370px) 1fr;
   grid-template-rows: 150px 1fr;
   font-family: sans-serif;
   background-color: var(--background-clr);
@@ -32,7 +32,7 @@ header {
 main {
   display: grid;
   grid-area: 2 / 2 / 3 / 3;
-  grid-template-columns: 3fr minmax(250px, 300px);
+  grid-template-columns: 3fr minmax(250px, 370px);
   gap: 30px;
   padding: 30px;
 }
@@ -76,10 +76,11 @@ main {
 
 .links > a {
   width: 30px;
+  font-size: 1.2rem;
 }
 .logo-section span {
   align-self: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 svg {
@@ -114,12 +115,12 @@ svg {
 /* project cards section */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
 }
 
 .card {
-  padding: 30px 30px;
+  padding: 40px 30px;
   background-color: var(--card-background-clr);
   border-left: 7px solid #ce45ae;
   border-radius: 5px;
@@ -157,7 +158,7 @@ svg {
   display: grid;
   gap: 20px;
   padding: 30px;
-  
+
   font-size: var(--announcement-font-size);
 }
 .annoucement > h4 {
