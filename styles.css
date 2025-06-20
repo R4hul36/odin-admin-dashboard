@@ -8,14 +8,14 @@
   --sidebar-background-clr: linear-gradient(#e14eca, #ba54f5);
   --btn-and-logo-clr: white;
   --background-clr: rgb(30, 30, 47);
-  --main-txt-clr: white;
+  --main-txt-clr: rgb(219, 213, 213);
   --card-background-clr: rgba(39, 41, 61, 255);
-  --announcement-font-size: 1rem;
+  --announcement-font-size: 0.8rem;
 }
 
 body {
   display: grid;
-  grid-template-columns: minmax(200px, 350px) 1fr;
+  grid-template-columns: minmax(200px, 360px) 1fr;
   grid-template-rows: 150px 1fr;
   font-family: sans-serif;
   background-color: var(--background-clr);
@@ -32,7 +32,7 @@ header {
 main {
   display: grid;
   grid-area: 2 / 2 / 3 / 3;
-  grid-template-columns: 3fr minmax(250px, 350px);
+  grid-template-columns: 3fr minmax(250px, 370px);
   gap: 30px;
   padding: 30px;
 }
@@ -87,7 +87,6 @@ header {
   font-size: 0.8rem;
 }
 
-
 .header-right {
   display: grid;
 }
@@ -101,10 +100,8 @@ header {
 }
 
 .user-icons > svg:nth-child(1),
-.user-icons > p
-{
-  align-self:center
-  
+.user-icons > p {
+  align-self: center;
 }
 
 .user-icons > svg:nth-child(1) {
@@ -125,7 +122,6 @@ header {
   border-radius: 25px;
   border: none;
   padding: 8px;
-  
 }
 
 /* Left navigation */
@@ -194,7 +190,7 @@ svg {
 /* project cards section */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 
@@ -238,6 +234,10 @@ svg {
   gap: 20px;
   padding: 30px;
 
+  /* font-size: var(--announcement-font-size); */
+}
+
+.annoucement > p {
   font-size: var(--announcement-font-size);
 }
 .annoucement > h4 {
