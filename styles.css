@@ -8,9 +8,11 @@
   --sidebar-background-clr: linear-gradient(#e14eca, #ba54f5);
   --btn-and-logo-clr: white;
   --background-clr: rgb(30, 30, 47);
-  --main-txt-clr: rgb(219, 213, 213);
-  --card-background-clr: rgba(39, 41, 61, 255);
+  --main-txt-clr: rgb(191, 191, 198);
+  --card-background-clr: rgba(39, 41, 61);
   --announcement-font-size: 0.8rem;
+  --heading-and-header-clr: rgb(240, 237, 237);
+  --card-hover-clr: rgb(66, 68, 93);
 }
 
 body {
@@ -27,6 +29,7 @@ li {
 }
 header {
   grid-area: 1 / 2 / 2 / 3;
+  color: var(--heading-and-header-clr)
 }
 
 main {
@@ -35,6 +38,10 @@ main {
   grid-template-columns: 3fr minmax(250px, 370px);
   gap: 30px;
   padding: 30px;
+}
+
+main h2,h3,h4 {
+  color: var(--heading-and-header-clr)
 }
 
 /* header section */
@@ -75,7 +82,7 @@ header {
 
 .profile-info {
   display: grid;
-  grid-template-columns: 50px 200px;
+  grid-template-columns: 50px 300px;
   gap: 20px;
 }
 
@@ -85,6 +92,10 @@ header {
 
 .welcome span {
   font-size: 0.8rem;
+}
+
+.welcome > p {
+  font-size: 1.2rem;
 }
 
 .header-right {
@@ -122,6 +133,7 @@ header {
   border-radius: 25px;
   border: none;
   padding: 8px;
+  cursor: pointer;
 }
 
 /* Left navigation */
@@ -203,6 +215,10 @@ svg {
   gap: 10px;
 }
 
+.card:hover {
+  background-color: var(--card-hover-clr);
+}
+
 .cards,
 .announcement-container,
 .trending-container {
@@ -219,6 +235,7 @@ svg {
 .project-icons > svg {
   width: 30px;
   margin-top: 30px;
+  cursor: pointer;
 }
 /* right section */
 
@@ -259,6 +276,14 @@ svg {
 
 .trending-card > svg {
   justify-self: center;
+}
+
+.trending-card > div > span {
+  color: var(--heading-and-header-clr);
+}
+
+.trending-card p {
+  font-size: 14px;
 }
 
 .trending-card > div {
