@@ -39,23 +39,54 @@ main {
 
 /* header section */
 
+header {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  padding: 20px 50px;
+  background-color: var(--card-background-clr);
+}
+
 .search {
   display: grid;
-  grid-template-columns: 40px 500px;
+  grid-template-columns: 40px minmax(400px, 500px);
   gap: 20px;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .search > svg {
-  width: 30px;
+  width: 35px;
 }
 
 .search > input {
   outline: none;
-  border-radius: 5px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  height: 30px;
+}
+
+.header-left {
+  display: grid;
+  gap: 30px;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  gap: 20px;
+}
+
+.welcome {
+  align-self: center;
 }
 
 /* Left navigation */
+
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
 
 .sidebar-container {
   display: grid;
@@ -176,6 +207,10 @@ svg {
 .trending-card {
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+
+.trending-card > svg {
+  justify-self: center;
 }
 
 .trending-card > div {
