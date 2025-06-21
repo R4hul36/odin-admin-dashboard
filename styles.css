@@ -1,3 +1,42 @@
+/* fonts */
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.woff2') format('woff2'),
+        url('fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.woff2') format('woff2'),
+        url('fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +60,7 @@ body {
   display: grid;
   grid-template-columns: minmax(200px, 320px) 1fr;
   grid-template-rows: 150px 1fr;
-  font-family: sans-serif;
+  font-family:"raleway";
   background-color: var(--background-clr);
   color: var(--main-txt-clr);
 }
