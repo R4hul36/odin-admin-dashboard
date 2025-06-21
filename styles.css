@@ -334,3 +334,12 @@ svg {
 .trending-card > div {
   align-self: center;
 }
+
+@media (max-width: 1024px) {
+ body {
+  grid-template-columns: 1fr;
+ }
+ .sidebar-container {
+  display: none;
+ }
+}
